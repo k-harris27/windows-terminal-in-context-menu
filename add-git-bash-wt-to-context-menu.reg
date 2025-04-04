@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Add Windows Terminal WSL Ubuntu Bash to the context menu of folders in File Explorer.
+
+[HKEY_CLASSES_ROOT\Directory\shell\git_shell\command]
+@="wt.exe \"C:\\Program Files\\Git\\bin\\bash.exe\" \"--cd=%1\""
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\git_shell\command]
+@="wt.exe \"C:\\Program Files\\Git\\bin\\bash.exe\" \"--cd=%v.\""
